@@ -133,7 +133,6 @@ var budgetController = (function(){
         data.totals[type] = sum;
     };
 
-    
     var data = {
         allItems: {
             exp: [],
