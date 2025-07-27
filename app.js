@@ -26,7 +26,7 @@ i. UI Module (2, 4, 6)      ii. Data Module (3, 5)      iii. Controller Module (
 1. How to set up event listeners for keypress events
 2. How to use event object
 
------Readinng Input Data-----
+-----Reading Input Data-----
 1. How to read data fromm different HTML input types
 
 -----Creating an Initialisation-----
