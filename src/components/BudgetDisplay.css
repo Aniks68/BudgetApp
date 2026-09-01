@@ -8,14 +8,14 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .budget {
-  position: absolute;
-  width: 350px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 500px;
   color: #fff;
 }
 
@@ -46,11 +46,28 @@
 }
 
 .budget__expenses {
+  padding: 12px;
+  text-transform: uppercase;
   background-color: #FF5049;
 }
 
+.budget__planned {
+  padding: 12px;
+  text-transform: uppercase;
+  background-color: #3498db;
+  margin-bottom: 10px;
+}
+
+.budget__actual {
+  padding: 12px;
+  text-transform: uppercase;
+  background-color: #9b59b6;
+}
+
 .budget__income--text,
-.budget__expenses--text {
+.budget__expenses--text,
+.budget__planned--text,
+.budget__actual--text {
   float: left;
   font-size: 13px;
   color: #444;
@@ -58,13 +75,16 @@
 }
 
 .budget__income--value,
-.budget__expenses--value {
+.budget__expenses--value,
+.budget__planned--value,
+.budget__actual--value {
   letter-spacing: 1px;
   float: left;
 }
 
 .budget__income--percentage,
-.budget__expenses--percentage {
+.budget__expenses--percentage,
+.budget__planned--percentage {
   float: left;
   width: 34px;
   font-size: 11px;
@@ -72,7 +92,8 @@
   margin-left: 10px;
 }
 
-.budget__expenses--percentage {
+.budget__expenses--percentage,
+.budget__planned--percentage {
   background-color: rgba(255, 255, 255, 0.2);
   text-align: center;
   border-radius: 3px;

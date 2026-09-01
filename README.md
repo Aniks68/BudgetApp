@@ -67,6 +67,21 @@ A React-based budget tracking application with Firebase authentication and Fires
        match /transactions/{transactionId} {
          allow read, write: if request.auth != null && request.auth.uid == resource.data.userId;
        }
+       match /budgetPlans/{planId} {
+         allow read, write: if request.auth != null && request.auth.uid == resource.data.userId;
+       }
+     }
+   }
+   ```
+   
+   **For development/testing**, you can use these permissive rules:
+   ```
+   rules_version = '2';
+   service cloud.firestore {
+     match /databases/{database}/documents {
+       match /{document=**} {
+         allow read, write: if request.auth != null;
+       }
      }
    }
    ```

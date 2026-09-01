@@ -46,6 +46,16 @@ const BudgetDisplay = ({ budget }) => {
             <div className="budget__income--percentage">&nbsp;</div>
           </div>
         </div>
+
+        <div className="budget__planned clearfix">
+          <div className="budget__planned--text">Planned Budget</div>
+          <div className="right clearfix">
+            <div className="budget__planned--value">{formatNumber(budget.plannedBudget || 0, 'inc')}</div>
+            <div className="budget__planned--percentage">
+              {budget.income > 0 ? ((budget.plannedBudget / budget.income) * 100).toFixed(2) + '%' : '--'}
+            </div>
+          </div>
+        </div>
         
         <div className="budget__expenses clearfix">
           <div className="budget__expenses--text">Expenses</div>

@@ -1,0 +1,206 @@
+/**********************************************
+*** BUDGET PLAN LIST
+**********************************************/
+
+.budget-plan-list {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.budget-plan-list h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.no-plans {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.plans-container {
+  display: grid;
+  gap: 15px;
+}
+
+.budget-plan-card {
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+  padding: 15px;
+  transition: box-shadow 0.3s;
+}
+
+.budget-plan-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.budget-plan-card.executed {
+  border-left: 4px solid #28B9B5;
+}
+
+.budget-plan-card.planned {
+  border-left: 4px solid #FFA500;
+}
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.plan-category {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.status-badge.planned {
+  background-color: #FFF3E0;
+  color: #FFA500;
+}
+
+.status-badge.executed {
+  background-color: #E8F5E9;
+  color: #28B9B5;
+}
+
+.plan-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.plan-amounts {
+  margin-bottom: 15px;
+}
+
+.amount-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.amount-row:last-child {
+  border-bottom: none;
+}
+
+.amount-row.variance {
+  font-weight: 600;
+  padding-top: 12px;
+  border-top: 2px solid #e7e7e7;
+}
+
+.amount-label {
+  font-size: 14px;
+  color: #777;
+}
+
+.amount-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+.amount-value.over {
+  color: #FF5049;
+}
+
+.amount-value.under {
+  color: #28B9B5;
+}
+
+.plan-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.mark-executed-btn {
+  padding: 8px 16px;
+  background-color: #28B9B5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mark-executed-btn:hover {
+  background-color: #24a8a4;
+}
+
+.delete-plan-btn {
+  padding: 8px 16px;
+  background-color: #FF5049;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-plan-btn:hover {
+  background-color: #e04842;
+}
+
+.cost-input-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1;
+}
+
+.cost-input-group input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.confirm-btn {
+  padding: 8px 16px;
+  background-color: #28B9B5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: #24a8a4;
+}
+
+.cancel-btn {
+  padding: 8px 16px;
+  background-color: #999;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #888;
+}
