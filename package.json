@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "firebase": "^11.0.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "firebase": "^11.0.0",
     "react-router-dom": "^7.0.0"
   },
   "devDependencies": {

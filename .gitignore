@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.firebase
+.github
+package-lock.json
+src/dataconnect-generated
