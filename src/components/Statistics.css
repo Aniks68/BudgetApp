@@ -1,0 +1,105 @@
+/**********************************************
+*** STATISTICS
+**********************************************/
+
+.statistics {
+  width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.statistics__title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.statistics__summary {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.stat-value.income {
+  color: #28B9B5;
+}
+
+.stat-value.expense {
+  color: #FF5049;
+}
+
+.statistics__monthly {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.statistics__monthly h3 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.no-data {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.statistics__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.statistics__table th,
+.statistics__table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.statistics__table th {
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.statistics__table td.income {
+  color: #28B9B5;
+}
+
+.statistics__table td.expense {
+  color: #FF5049;
+}
+
+.statistics__table tr:hover {
+  background-color: #f7f7f7;
+}
