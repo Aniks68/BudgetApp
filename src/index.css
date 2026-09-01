@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  position: relative;
+  min-height: 100vh;
+  font-weight: 400;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}

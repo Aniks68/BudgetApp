@@ -1,0 +1,260 @@
+/**********************************************
+*** GLOBAL STYLES
+**********************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/**********************************************
+*** LAYOUT
+**********************************************/
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.container.three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.bottom {
+  background-color: white;
+}
+
+.column {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/**********************************************
+*** ELEMENTS STYLE
+**********************************************/
+
+.column__title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.column__list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.item {
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.item__description {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  flex: 1;
+  word-break: break-word;
+}
+
+.item__value {
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 80px;
+  text-align: right;
+}
+
+.item__percentage {
+  font-size: 12px;
+  font-weight: 500;
+  min-width: 50px;
+  text-align: right;
+  color: #777;
+}
+
+.item__value.income {
+  color: #28B9B5;
+}
+
+.item__value.budget {
+  color: #555;
+}
+
+.item__value.expense {
+  color: #FF5049;
+}
+
+.item__delete--btn {
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #999;
+  padding: 4px 8px;
+  transition: color 0.3s;
+}
+
+.item__delete--btn:hover {
+  color: #FF5049;
+}
+
+.empty-message {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.add-budget-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.budget-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.budget-input:focus {
+  outline: none;
+  border-color: #28B9B5;
+}
+
+.add-budget-btn {
+  padding: 8px 16px;
+  background-color: #28B9B5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.add-budget-btn:hover {
+  background-color: #24a8a4;
+}
+
+.actual-cost-edit {
+  min-width: 80px;
+}
+
+.actual-cost-input {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.actual-cost-input:focus {
+  outline: none;
+  border-color: #28B9B5;
+}
+
+.item__delete--btn:focus { outline: none; }
+.item__delete--btn:active { transform: translateY(2px); }
+
+.item__delete--btn.small {
+  font-size: 14px;
+  padding: 2px 6px;
+}
+
+.linked-expenses {
+  margin-top: 8px;
+  padding-left: 10px;
+  border-left: 2px solid #e7e7e7;
+}
+
+.linked-expense {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  margin-bottom: 4px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.linked-expense span {
+  flex: 1;
+}
+
+.linked-expense span:last-child {
+  flex: 0;
+  min-width: 60px;
+  text-align: right;
+  font-weight: 600;
+  color: #FF5049;
+}
+
+.budget-item {
+  border-left: 4px solid #28B9B5;
+  display: flex;
+  flex-direction: row;
+}
+
+.expense-item {
+  border-left: 4px solid #FF5049;
+}
+
+.unlinked-expense {
+  border-left: 4px solid #999;
+}
+
+@media (max-width: 1024px) {
+  .container.three-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container.three-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item__value,
+  .item__percentage {
+    text-align: left;
+  }
+
+  button {
+    align-self: flex-end;
+  }
+}
