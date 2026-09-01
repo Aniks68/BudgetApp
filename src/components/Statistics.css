@@ -156,3 +156,19 @@
 .statistics__table tr:hover {
   background-color: #f7f7f7;
 }
+
+@media (max-width: 768px) {
+  .statistics__summary {
+    grid-template-columns: 1fr;
+  }
+
+  .statistics__monthly {
+    margin-bottom: 20px;
+  }
+
+  .statistics__table {
+    /* make table row not overflow  */
+    display: block;
+    overflow-x: auto;
+  }
+}

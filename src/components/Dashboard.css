@@ -57,8 +57,11 @@
 }
 
 .budget-planning-section {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   margin: 60px auto;
   display: grid;
   gap: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }

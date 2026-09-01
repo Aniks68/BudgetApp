@@ -40,7 +40,6 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-height: 400px;
 }
 
 /**********************************************
@@ -230,4 +229,32 @@
 
 .unlinked-expense {
   border-left: 4px solid #999;
+}
+
+@media (max-width: 1024px) {
+  .container.three-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container.three-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item__value,
+  .item__percentage {
+    text-align: left;
+  }
+
+  button {
+    align-self: flex-end;
+  }
 }

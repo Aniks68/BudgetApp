@@ -137,3 +137,15 @@
 .red-focus:focus {
   border: 1px solid #FF5049 !important;
 }
+
+@media (max-width: 768px) {
+  .add__container form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .add__type, .add__description, .add__value, .add__budget-select, .add__btn {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+  }
+}
