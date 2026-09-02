@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "budget-tracker-70c85"
+  },
+  "targets": {
+    "budget-tracker-70c85": {
+      "hosting": {
+        "app": [
+          "ikbudget-app"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
